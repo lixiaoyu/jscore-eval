@@ -1,0 +1,6 @@
+    (age > 18) ||
+    (age < 18 + 12) && 
+    (level ==='3') && 
+    (interests.includes('出国游'))&& 
+    (['出国游','看电影'].includes(interest))||
+    !(profession === '上班族')

@@ -1,0 +1,27 @@
+{
+  "name": "babel-play",
+  "version": "0.0.0",
+  "private": true,
+  "scripts": {
+    "start": "node ./bin/www"
+  },
+  "dependencies": {
+    "@babel/generator": "^7.7.7",
+    "@babel/parser": "^7.7.7",
+    "@babel/template": "^7.7.4",
+    "@babel/traverse": "^7.7.4",
+    "@babel/types": "^7.7.4",
+    "babel-generator": "^6.26.1",
+    "babel-traverse": "^6.26.0",
+    "babylon": "^6.18.0",
+    "cookie-parser": "~1.4.4",
+    "debug": "~2.6.9",
+    "express": "~4.16.1",
+    "http-errors": "~1.6.3",
+    "jade": "~1.11.0",
+    "morgan": "~1.9.1"
+  },
+  "devDependencies": {
+    "babel-core": "^6.26.3"
+  }
+}
