@@ -6,6 +6,7 @@
     "start": "node ./bin/www"
   },
   "dependencies": {
+    "@babel/core": "^7.7.7",
     "@babel/generator": "^7.7.7",
     "@babel/parser": "^7.7.7",
     "@babel/template": "^7.7.4",
@@ -19,7 +20,8 @@
     "express": "~4.16.1",
     "http-errors": "~1.6.3",
     "jade": "~1.11.0",
-    "morgan": "~1.9.1"
+    "morgan": "~1.9.1",
+    "nodemon": "^2.0.2"
   },
   "devDependencies": {
     "babel-core": "^6.26.3"

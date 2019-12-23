@@ -1,0 +1,10 @@
+function foo(param){
+    /* to be generated
+    const {age,level,interest,interests,profession} = param;
+    */
+    return (
+    /**start**/
+    RETURN_STATMENT
+    /**end**/
+    )
+}
