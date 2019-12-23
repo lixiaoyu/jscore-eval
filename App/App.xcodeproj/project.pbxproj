@@ -13,8 +13,8 @@
 		608659BC23B142FC0028C89E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 608659BA23B142FC0028C89E /* LaunchScreen.storyboard */; };
 		608659C723B142FC0028C89E /* AppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 608659C623B142FC0028C89E /* AppTests.swift */; };
 		608659D223B142FC0028C89E /* AppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 608659D123B142FC0028C89E /* AppUITests.swift */; };
-		608659E023B143320028C89E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 608659DF23B143320028C89E /* ViewController.swift */; };
-		608659E323B143420028C89E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 608659E123B143420028C89E /* Main.storyboard */; };
+		608659E523B144730028C89E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 608659E423B144730028C89E /* ViewController.swift */; };
+		608659E823B1447A0028C89E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 608659E623B1447A0028C89E /* Main.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,8 +47,8 @@
 		608659CD23B142FC0028C89E /* AppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		608659D123B142FC0028C89E /* AppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppUITests.swift; sourceTree = "<group>"; };
 		608659D323B142FC0028C89E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		608659DF23B143320028C89E /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ViewController.swift; path = ../../client/source/ViewController.swift; sourceTree = "<group>"; };
-		608659E223B143420028C89E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = ../../client/source/Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		608659E423B144730028C89E /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		608659E723B1447A0028C89E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,9 +103,9 @@
 				608659B123B142FB0028C89E /* SceneDelegate.swift */,
 				608659B823B142FC0028C89E /* Assets.xcassets */,
 				608659BA23B142FC0028C89E /* LaunchScreen.storyboard */,
-				608659E123B143420028C89E /* Main.storyboard */,
-				608659DF23B143320028C89E /* ViewController.swift */,
+				608659E623B1447A0028C89E /* Main.storyboard */,
 				608659BD23B142FC0028C89E /* Info.plist */,
+				608659E423B144730028C89E /* ViewController.swift */,
 			);
 			path = App;
 			sourceTree = "<group>";
@@ -232,7 +232,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				608659E323B143420028C89E /* Main.storyboard in Resources */,
+				608659E823B1447A0028C89E /* Main.storyboard in Resources */,
 				608659BC23B142FC0028C89E /* LaunchScreen.storyboard in Resources */,
 				608659B923B142FC0028C89E /* Assets.xcassets in Resources */,
 			);
@@ -259,7 +259,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				608659E023B143320028C89E /* ViewController.swift in Sources */,
+				608659E523B144730028C89E /* ViewController.swift in Sources */,
 				608659B023B142FB0028C89E /* AppDelegate.swift in Sources */,
 				608659B223B142FB0028C89E /* SceneDelegate.swift in Sources */,
 			);
@@ -305,10 +305,10 @@
 			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
 		};
-		608659E123B143420028C89E /* Main.storyboard */ = {
+		608659E623B1447A0028C89E /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				608659E223B143420028C89E /* Base */,
+				608659E723B1447A0028C89E /* Base */,
 			);
 			name = Main.storyboard;
 			sourceTree = "<group>";
