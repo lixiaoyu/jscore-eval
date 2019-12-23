@@ -1,6 +1,6 @@
 //
-//  JSCoreEvalUITests.swift
-//  JSCoreEvalUITests
+//  AppUITests.swift
+//  AppUITests
 //
 //  Created by walterlee on 2019/12/24.
 //  Copyright © 2019 walterlee. All rights reserved.
@@ -8,7 +8,7 @@
 
 import XCTest
 
-class JSCoreEvalUITests: XCTestCase {
+class AppUITests: XCTestCase {
 
     override func setUp() {
         // Put setup code here. This method is called before the invocation of each test method in the class.

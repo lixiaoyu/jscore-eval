@@ -1,15 +1,15 @@
 //
-//  JSCoreEvalTests.swift
-//  JSCoreEvalTests
+//  AppTests.swift
+//  AppTests
 //
 //  Created by walterlee on 2019/12/24.
 //  Copyright © 2019 walterlee. All rights reserved.
 //
 
 import XCTest
-@testable import JSCoreEval
+@testable import App
 
-class JSCoreEvalTests: XCTestCase {
+class AppTests: XCTestCase {
 
     override func setUp() {
         // Put setup code here. This method is called before the invocation of each test method in the class.
