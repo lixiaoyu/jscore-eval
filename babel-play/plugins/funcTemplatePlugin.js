@@ -39,7 +39,15 @@ module.exports = ({types: t},option) => {
     return {
         visitor: {
             ReturnStatement(path) {
-                path.insertBefore(types.expressionStatement(types.stringLiteral(paramAssignCode)));
+                //https://astexplorer.net/
+                // variableDeclaration -> ObjectPattern  Indentifier
+                const properties = variableList.map(function(obj){
+                    return t.objectProperty(t.identifier(obj),t.identifier(obj))
+                })
+                console.log(properties)
+                const objectPattern = t.objectPattern(properties)
+                const variableDecl = t.variableDeclarator(objectPattern,t.identifier("params"))
+                path.insertBefore(t.variableDeclaration("const",[variableDecl]));
             },
             Identifier(path) {
                 if (path.node.name === 'RETURN_STATMENT') {

@@ -3,6 +3,7 @@ const generate = require("@babel/generator")
 const {transformFromAstSync} = require("@babel/core")
 const types = require("@babel/types")
 const funcTplPlugin = require('./plugins/funcTemplatePlugin.js')
+
 const requireTransform = (source, options) => {
     //  1.用 babylon 解析 ast
     let sourceAst = babylon.parse(source, {allowReturnOutsideFunction: true})
@@ -16,7 +17,10 @@ const requireTransform = (source, options) => {
         configFile: false,
         comments: true,
         plugins,
-        sourceMaps: false
+        sourceMaps: false,
+        presets:  [
+            require("@babel/preset-env"),
+        ]
     });
    // 3. 将 babel 处理之后的 ast 生成代码
    console.log(code)
