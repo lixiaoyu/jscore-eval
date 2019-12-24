@@ -1,6 +1,6 @@
-function foo(param){
+function foo(params){
     /* to be generated 
-    const {age,level,interest,interests,profession} = param;
+    const {age,level,interest,interests,profession} = params;
     */
     return (
     /**start**/

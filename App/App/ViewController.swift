@@ -47,7 +47,7 @@ class ViewController: UIViewController {
     
         let obj = try decoder.decode(Memo.self, from: data)
         print(obj.data)
-        self.evaludate(js: obj.data)
+       _ = self.evaluate(js: obj.data)
       }catch let jsonErr{
         
         print("Failed to decode json:", jsonErr)
@@ -60,13 +60,21 @@ class ViewController: UIViewController {
   }
   //  let { foo, bar } = { foo: "aaa", bar: "bbb" };
   
-  func evaludate(js: String) -> Bool {
-    let paramList : [String:Any] = ["age":19,"level":"3","interests":"['出国游','看电影','逛街']","interest":"看电影","profession":"自由职业"]
+  func evaluate(js: String) -> Bool {
+    let paramList : [String:Any] = ["age":19,
+                              "level":"3",
+                              "interests":["出国游","看电影","逛街"],
+                              "interest":"看电影",
+                              "profession":"自由职业"]
+    let data = try? JSONSerialization.data(withJSONObject: paramList, options: JSONSerialization.WritingOptions.fragmentsAllowed)
+    let jsonStr = String(data: data!, encoding: .utf8)
+    print(jsonStr)
     
-    let jsonData = try! JSONSerialization.data(withJSONObject: paramList, options: JSONSerialization.WritingOptions.fragmentsAllowed)
-    let param = String(data: jsonData, encoding: .utf8)
     let jscontext = JSContext()
-    let result: Bool = jscontext?.evaluateScript(js)?.toBool() ?? false
+    //注册一个 js 函数
+    jscontext?.evaluateScript(js)
+    let jsFunction = jscontext?.objectForKeyedSubscript("foo")
+    let result: Bool = jsFunction?.call(withArguments: [paramList]).toBool() ?? false
     if result {
       print("")
     } else {
