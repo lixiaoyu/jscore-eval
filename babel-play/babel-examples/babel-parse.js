@@ -1,7 +1,4 @@
-
 const babylon = require("babylon")
-
-
 
 const code = `function square(n) {
     return n*n;
